@@ -7,8 +7,7 @@
  * Return: with 0 this means success
  *
  */
-
- int main (void)
+ int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
 	return 0;
