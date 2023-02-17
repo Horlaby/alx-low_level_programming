@@ -1,22 +1,24 @@
 #include <stdio.h>
+
 /**
- * main - printing combination of numbers
- * Return: Always 0
+ *main - print 00 to 99 with no duplicate digits or combos: no 11, no 10 (01)
+ *
+ *Return: Always 0 (Success)
  */
 
 int main(void)
 {
+	int ones;
 	int tens;
-	int units;
 
-	for (tens = '0'; tens <= '9'; tens++)
+	for (tens = '0'; tens <= '9'; tens++) /*increment tens*/
 	{
-		for (units = '0'; units <= '9'; units++)
+		for (ones = (tens + 1); ones <= '9'; ones++) /*one's ten+1*/
 		{
 			putchar(tens);
-			putchar(units);
+			putchar(ones);
 
-			if (!(tens == '9' && units == '9')) /* this skips the comma */
+			if (tens != '8' || ones != '9') /*print commas*/
 			{
 				putchar(',');
 				putchar(' ');
@@ -24,5 +26,6 @@ int main(void)
 		}
 	}
 	putchar('\n');
+
 	return (0);
 }
