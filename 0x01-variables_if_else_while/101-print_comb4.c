@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- *main - print 00 to 99 with no duplicate digits or combos: no 11, no 10 (01)
- * *Return: Always 0 (Success)
+ * main - print 012 to 789 with no duplicate digits : no 111, no 100 (012)
+ * Return: Always 0
  */
 
 int main(void)
@@ -10,11 +10,11 @@ int main(void)
 	int tens;
 	int units;
 
-	for (units = '0'; units <= '9'; units++) /*increment tens*/
+	for (units = '0'; units <= '9'; units++) /*increment units*/
 	{
 		for (tens = (units + 1); tens <= '9'; tens++)
 		{
-			for (hunds = (tens + 1); hunds <= '9'; hunds++) /*one's ten+1*/
+			for (hunds = (tens + 1); hunds <= '9'; hunds++) /*hunds's ten+1*/
 			{
 				putchar(hunds);
 				putchar(tens);
