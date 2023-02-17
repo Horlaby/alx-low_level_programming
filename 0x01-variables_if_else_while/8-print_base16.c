@@ -11,11 +11,11 @@ int main(void)
 
 	for (; i <= '9'; i++) /* prints out numbers */
 	{
-		for (; l < 'g'; l++) /* This prints leters */
-		{
-			putchar(i);
-			putchar(l);
-		}
+		putchar(i);
+	}
+	for (; l < 'g'; l++) /* This prints leters */
+	{
+		putchar(l);
 	}
 	putchar('\n');
 	return (0);
