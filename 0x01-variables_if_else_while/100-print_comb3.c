@@ -16,7 +16,7 @@ int main(void)
 			putchar(tens);
 			putchar(units);
 
-			if ((tens != '9' && units != '9')) /* this skips the comma */
+			if (!(tens == '9' && units == '9')) /* this skips the comma */
 			{
 				putchar(',');
 				putchar(' ');
