@@ -19,7 +19,7 @@ int main(void)
 				putchar(units);
 				putchar(tens);
 				putchar(hunds);
-				if (hunds != '7' || tens != '8' || units != '9') /*print commas*/
+				if (hunds != '7' && tens != '8' && units != '9') /*print commas*/
 				{
 					putchar(',');
 					putchar(' ');
