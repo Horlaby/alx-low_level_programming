@@ -16,9 +16,9 @@ int main(void)
 		{
 			for (hunds = (tens + 1); hunds <= '9'; hunds++) /*hunds's ten+1*/
 			{
-				putchar(hunds);
-				putchar(tens);
 				putchar(units);
+				putchar(tens);
+				putchar(hunds);
 				if (hunds != '7' || tens != '8' || units != '9') /*print commas*/
 				{
 					putchar(',');
