@@ -6,12 +6,12 @@
 
 int main(void)
 {
-	int tens = '0';
-	int units = '0';
+	int tens;
+	int units;
 
-	for (; tens <= '9'; tens++)
+	for (tens = '0'; tens <= '9'; tens++)
 	{
-		for (; units <= '9'; units++)
+		for (units = '1'; units <= '9'; units++)
 		{
 			putchar(tens);
 			putchar(units);
