@@ -6,8 +6,8 @@
 
 int main(void)
 {
-	int i = '9';
-	char l = 'g';
+	int i = '0';
+	char l = 'a';
 
 	for (; i <= '9'; i++) /* prints out numbers */
 	{
